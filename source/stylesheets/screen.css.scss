@@ -64,7 +64,8 @@ body {
     .notes {
       background: rgba(255,229,69, 0.2);
       border: 1px solid rgba(255,229,69, 0.4);
-      padding: 8px;
+      line-height: 22px;
+      padding: 14px;
       em {
         display: inline-block;
         font-weight: 600;
@@ -163,30 +164,36 @@ body {
     clear: both;
     overflow: hidden;
 
-    img {
-      border: 8px solid rgba(84,37,215, 0.3);
-      @include border-radius(5px);
-      display: block;
-      float: left;
-      width: 30%;
-      margin-right: 16px;
-    }
+    .photo-container {
+      max-width: 900px;
+      margin: 0 auto;
 
-    .photo-description {
-      float: left;
-      position: relative;
-      text-shadow: 1px 1px 1px rgba(84,37,215, 0.4);
-      width: 60%;
-
-      h4 {
-        font-size: 31px;
-        line-height: 30px;
-        margin: 0 0 5px 0;
+      img {
+        border: 8px solid rgba(84,37,215, 0.3);
+        @include border-radius(5px);
+        display: block;
+        float: left;
+        width: 30%;
+        max-width: 612px;
+        margin-right: 16px;
       }
-      p {
-        font-size: 18px;
-        line-height: 22px;
-        margin: 23px 0 10px 0;
+
+      .photo-description {
+        float: left;
+        position: relative;
+        text-shadow: 1px 1px 1px rgba(84,37,215, 0.4);
+        width: 60%;
+
+        h4 {
+          font-size: 31px;
+          line-height: 30px;
+          margin: 0 0 5px 0;
+        }
+        p {
+          font-size: 18px;
+          line-height: 22px;
+          margin: 23px 0 10px 0;
+        }
       }
     }
   }
