@@ -19,7 +19,7 @@ body {
     font-size: 32px;
     font-style: normal;
     font-weight: 100;
-    line-height: 34px;
+    line-height: 38px;
     margin-top: 9px;
     max-width: 800px;
   }
@@ -42,9 +42,8 @@ body {
   .blog-snippet {
     @extend .section;
 
-    span {
+    p.day {
       color: #CCC;
-      display: inline-block;
       font-size: 13px;
       letter-spacing: 1px;
       margin: 8px 0;
@@ -256,6 +255,16 @@ body {
 }
 
 @media all and (min-width: 920px) {
+  body {
+    h1, h2, h3 {
+      margin: 0.25em auto !important;
+      max-width: 900px;
+    }
+    p {
+      margin: 22px auto !important;
+      max-width: 900px;
+    }
+  }
   .photo-section {
     img {
       margin-right: 30px !important;
@@ -272,6 +281,11 @@ body {
         line-height: 28px !important;
         margin: 20px 0 !important;
       }
+    }
+  }
+  .blog-snippet {
+    .notes {
+      max-width: 880px !important;
     }
   }
 }
